@@ -1,0 +1,25 @@
+Source: libparams-coerce-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Florian Schlichting <fsfs@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+Build-Depends-Indep: libparams-util-perl <!nocheck>,
+                     libtest-pod-perl <!nocheck>,
+                     perl
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libparams-coerce-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libparams-coerce-perl.git
+Homepage: https://metacpan.org/release/Params-Coerce
+Rules-Requires-Root: no
+
+Package: libparams-coerce-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libparams-util-perl
+Description: Perl module to permit parameter coercion for classes
+ Params::Coerce attempts to encourage flexibility in the ways that your class
+ accepts parameters by making it easier to take different types of parameters,
+ while adding negligible additional complexity to your code.
